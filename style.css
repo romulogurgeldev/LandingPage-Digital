@@ -60,11 +60,14 @@ nav {
 
 .nav-icons {
     display: flex;
-    gap: 1rem;
+    gap: 1rem;;
 }
 
 .nav-icons a {
     color: var(--text-dark);
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
 }
 
 /* Hero Section */
@@ -440,18 +443,13 @@ footer {
 }
 
 .footer-bottom {
-    text-align: center;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    gap: 0.5rem;
+    flex-wrap: nowrap;
+    font-size: small;
     color: #ccc;
-}
-
-.footer-bottom p {
-    font-size: 0.9rem;
 }
 
 /* Responsive Design */
@@ -470,11 +468,6 @@ footer {
     
     .nav-links {
         display: none;
-    }
-    
-    .footer-bottom {
-        flex-direction: column;
-        gap: 1rem;
     }
     
     .newsletter-input {
